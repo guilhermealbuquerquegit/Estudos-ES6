@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>02- This no Arrow Function</title>
+</head>
+<body>
+<button id="btn"> Clique Me!</button>	
+</body>
+<script>
+//This representa o obejto no qual estamos manipulando ou interagindo do contexto do código
+ //Nesse contexto, o objeto this está representando objeto BTN
+ //Nesse caso se eu usar Arrow Function, ele não me retornará o btn e sim um Window, se eu usar function normal ele consegue me retornar o btn.
+ //Nesse contexto devo usar Function
+
+ 
+ const btn = document.getElementById('btn');
+ btn.addEventListener('click',function() {
+ 	console.log(this);
+ });
+</script>
+</html>

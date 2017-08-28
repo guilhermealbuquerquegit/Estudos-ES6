@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>01- Intro Arrow Function</title>
+</head>
+<body>
+	
+</body>
+<script>
+//Arrow Function trabalha com todo o contexto do código.
+
+// map = função que pega um array e retorna um novo array  a partir do array anterior
+	const girls = ['Jaísa', 'Renata', 'Vitória'];
+	 const love = girls.map(function(name) {
+	 		return `I love ${name}!`;
+	 });
+
+//Arrow Function
+	//Tirei function e coloquei a seta '=>'.
+
+	 const loveArrow = girls.map((name) => {
+	 		return `I love ${name}!`;
+	 });
+
+
+//Possuindo somente um parametro 'name',logo é retirado os parenteses dele.
+
+	const loveArrowSingle = girls.map(name => {
+	 		return `I love ${name}!`;
+	 });
+
+	
+//Arrow function em uma linha
+	//tirei as chaves e o return
+
+	const loveArrowOneLine = girls.map(name =>`I love ${name}!`);
+
+
+//Encadeamento de metódos: encadeando o metódo filter junto o matódo map. 
+
+	const loveChain = girls
+			.filter(name => name === 'Jaísa')
+			.map(name => `I love ${name}!`);
+
+console.log(loveChain);
+</script>
+</html>

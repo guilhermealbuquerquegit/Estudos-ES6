@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>03- Escopo ES6 com Const</title>
+</head>
+<body>
+</body>
+<script>
+// Atribuição de valores constantes
+// Variavel que não posso REATRIBUIR
+//Const não é imutável, pois a variavel eu consigo declarar novamente, porém os valores do meu objeto eu consigo reescrever-los.
+
+
+
+
+//Ex de Obejeto que não é imutável 
+
+const estagiario = {
+	name:'Guilherme',
+	age: 17,
+	area: 'gerente de TI'
+};
+
+console.log(estagiario);
+
+estagiario.area = 'programador';
+console.log(estagiario);
+
+
+
+
+
+
+//Deixando o Objeto imutável
+
+var estagiario = {
+	name:'guilherme',
+	age: 17,
+	area:'programador'
+};
+
+// Método freeze retorna um objeto congelado, imutável.
+Object.freeze(estagiario);
+
+estagiario.area = 'Gerente';
+
+console.log(estagiario);
+
+
+
+
+
+
+</script>
+</html>

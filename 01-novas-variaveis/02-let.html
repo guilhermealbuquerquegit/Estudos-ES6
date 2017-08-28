@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>01 - Escopo ES6 com let</title>
+</head>
+<body>
+</body>
+<script>
+
+//Let sempre vai respeitar o scopo do bloco
+//Não tente trabalhar com uma variavel LET fora do bloco
+//Let só trabalha com nome único, dentro do mesmo scopo
+//Ultilidade para não correr o risco das variaveis serem rescritas do codigo
+
+
+//Exemplo
+
+var animal = 'cat';
+console.log(animal);
+{
+	let animal = 'dog';
+	console.log(animal);
+}
+console.log(animal);
+
+
+// Let globalmente
+let animal = 'dog';
+{
+	console.log(animal);
+}
+console.log(animal);
+
+
+//Exemplo error
+{
+	let animal = 'dog';
+}
+console.log(animal);
+
+
+
+ 
+</script>
+</html>

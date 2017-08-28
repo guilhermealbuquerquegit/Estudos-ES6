@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>01 - Escopo ES6 com var</title>
+</head>
+<body>
+
+</body>
+<script>
+//VAR SEMPRE VAI SER GLOBAL, A NÃO SER QUE ESTEJA DENTRO DE FUNÇÕES
+
+//Exemplo com variavel declarada e atribuida globalmente. Funcionamento global.
+var animal = 'cat';
+function sayanimal () {
+	console.log(animal);
+}
+sayanimal();
+console.log(animal);
+
+
+
+//Exemplo variavel declarada globalmente, mas atribuição local. Funcionamento como variavel global.
+var animal;
+function sayanimal () {
+	animal = 'cat';
+	console.log(animal);
+}
+sayanimal();
+console.log(animal);
+
+
+
+//Exemplo com a  variavel local, respeitando o scopo
+function sayanimal () {
+	var animal = 'cat';
+	console.log(animal);
+}
+sayanimal();
+console.log(animal);
+
+
+//Exemplo variavel com o mesmo nome, mas uma com o funcionamento global e outra local.
+var animal = 'dog';	
+function sayanimal () {
+	var animal = 'cat';
+	console.log(animal);
+
+}
+sayanimal();
+console.log(animal);
+
+
+
+
+	
+</script>	
+
+</html>

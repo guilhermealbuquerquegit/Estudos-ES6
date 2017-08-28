@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>04- Temporal dead zone (TDZ)</title>
+</head>
+<body>
+</body>
+<script>
+
+//Hoisting, elevação ou içamento
+
+console.log(name);
+var name = 'guilherme';
+
+
+
+
+//ReferenceError
+console.log(name)
+let name;
+
+
+
+//Situação de Let undefined 
+let name;
+console.log(name);
+name = 'gui';
+
+
+//ReferenceError
+console.log(name)
+const name = 'gui';
+
+
+//Erro de sintaxe no Const
+const name;
+console.log(name);
+name = 'gui';
+
+
+
+</script>
+</html>
