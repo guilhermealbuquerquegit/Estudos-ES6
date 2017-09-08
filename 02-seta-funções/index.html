@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        <button id="btn">click-me</button>
+    </body>    
+        <script>
+            const bookStory = {
+                        
+                pillars: ['Economia','Estratégia'],
+
+                ideology: ['Liberalismo','Socialismo','Keynesianismo'],
+
+
+                policy: function() {
+                    return ` A Politica possui dois assuntos relacionados que é a ${this.pillars[0]} e ${this.pillars[1]}`;
+                }, 
+
+                ideologyinSchool: function() {
+                    return `Hoje vimos vários ideologia sendo pregadas nas escola como ${this.ideology[2]}, quando capitalista possui um mentalidade estatizante oriunda do ${this.ideology[2]}`;
+                },
+
+
+                study: function() {
+                    
+                    window.setTimeout(() => {
+                        console.log(this.ideologyinSchool() + this.policy());
+                    }, 500);
+                }
+
+            
+            };
+
+            const btn = document.getElementById('btn');
+
+            btn.addEventListener('click', function() { bookStory.study() });
+
+        </script>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+

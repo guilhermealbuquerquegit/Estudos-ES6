@@ -6,29 +6,31 @@
 </head>
 <body>
 	<button id="btn"> Make my sandwich!</button>
+	<h1>Quando eu estiver usando function dentro de function e quiser pergar ou retornar os primeiros metódos</h1>
 </body>
 <script>
 	const sandwich = {
 		bread: 'carioca',
-		cheese: 'mussarela'
+		cheese: 'mussarela',
 
 
 		prepare: function() {
-			return `I want a sandwich with bread ${this.bread} and cheese ${this.cheese}`
+			return `I want a sandwich with bread ${this.bread} and cheese ${this.cheese}`;
 
 		},
 
 
-		make: functon() {
-			var that = this;
-			window.setTimeout(function() {
-				console.log(that.prepare());
+		make: function() {
+			var that = this; // Perde o That, maneira de usar o o this pegando o  global e usando function normal
+			window.setTimeout(function() {  // window.setTimeout(() => {    Fazendo o uso  => da seta identificando o Arrow Function
+				console.log(that.prepare()); //console.log(this.prepare());})  Posso usar o this  para pegar o contexto global da função
 			}, 500);
 		}
 	};
 
 
-	const btn = document.getElementsById('btn');
+	const btn = document.getElementById('btn');
 	btn.addEventListener('click',  function() {sandwich.make() });
+
 </script>
 </html>
