@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01 - Uses Templates Literals</title>
+</head>
+<body>  
+    <h1>Permite que façamos a junção de strigs e variáveis de uma forma mais simples</h1>
+</body>
+<script>
+
+    const passion = {
+        name: 'Cíntia',
+        course: 'Computer Science'
+    };
+    
+    const text = 'Gosto da ' + passion.name + ' e gostaria que ela fizesse o curso de ' + passion.course + '!';
+    console.log(text);
+
+    const textTemplateLiterals = `Gosto da ${passion.name} e gostaria que ela fizesse o curso de ${passion.course}!`;
+    console.log(textTemplateLiterals);
+
+
+
+    const fruits = 'Banana'+'\n'+'Apple'+'\n'+'Orange';
+    console.log(fruits);
+
+
+
+    const fruitsTemplateLiterals = 
+`Banana
+Apple
+Orange`;
+
+    console.log(fruitsTemplateLiterals);
+
+
+
+</script>
+</html>
