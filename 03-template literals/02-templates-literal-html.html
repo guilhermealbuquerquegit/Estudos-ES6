@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>02- Template Literals para Html Fragments</title>
+</head>
+<body>
+    
+</body>
+<script>  
+ const article = {
+     title: 'Aprendendo Template Strings',
+     intro: 'Uma breve explicação de como se ultilizar template strings do ES6 em seu código hoje!',
+     body: 'Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.',
+     tags: ['es6', 'js', 'template-literal  '],
+     author: 'Guilherme'
+
+};      
+
+function renderAuthor(name) {
+    return (name) ? name: 'unknown';
+}
+
+const markup = `
+    <article>
+        <header>
+            <h1>${article.title}</h1>
+        </header>
+        <section>
+            <p/>${article.intro}</p>  
+        </section>
+        <footer>
+            <ul>
+                ${article.tags.map((tag) => `<li>${tag}</li>`).join('')}
+            </ul>
+            <p>Author: ${article.author}</p>
+        </footer>
+    </article>
+`;
+
+
+document.body.innerHTML = markup;
+
+</script>
+</html>
