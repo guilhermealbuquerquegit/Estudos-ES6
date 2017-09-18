@@ -9,7 +9,7 @@
 
 <style>
     .green {
-        calor: green;
+        color: green;
         font-size: 25px;
     }
 
@@ -25,11 +25,16 @@
     
 
     function green(template, ...values) {
-       return template.reduce(x)
+        return  template.reduce((accumulator, part, i) =>{ 
+            return `
+                ${accumulator}
+                <span class="green">${values[i - 1].toUpperCase()}</span>
+                ${part}
+            `
+        });
     }
 
-
-    const ireland = `I live in ${city} the city of ${something} and ${otherthing}!`;
+    const ireland = green`I live in ${city} the city of ${something} and ${otherthing}!`;
 
 
     document.body.innerHTML = ireland;
