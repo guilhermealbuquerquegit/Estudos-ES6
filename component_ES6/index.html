@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Component com ES6</title>
+</head>
+<body>
+    <img class="album-item" src="" alt="Ten">
+    <p class="album-title">Ten</p>
+    <p class="album-artist">Pearl Jam</p>
+    <p class="album-counter">11 Músicas</p>
+</body>
+<script>
+    function createMarkupAlbum(data) {
+        return(`
+          <img class="album-item" src="${data.images}" alt="Ten">
+          <p class="album-title">${data.title}</p>
+          <p class="album-artist">${data.artist}</p>
+          <p class="album-counter">${data.tacks.length} Músicas</p>
+       `);
+   }
+
+    function renderAlbumInfo(data, element) {
+       const markup = createMarkupAlbum(data);
+       element.innerHTML = markup;
+   };
+
+      const album = document.getElementById('album');
+      renderAlbumInfo(data, album);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>
