@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>01 - Intro Destructuring Objects</title>
+</head>
+<body>
+    <h1>Permite pegar elementos e criar variaveis a partir de objetos</h1>
+</body>
+<script>
+    const data = {
+        name: 'Guilherme',
+        surname: 'Albuquerque',
+        age: 18,
+        social:{
+            github: '/guilhermealbuquerquegit'
+        }
+    };
+ const {name,social} = data.social;
+ console.log(social);
+</script>
+</html>
