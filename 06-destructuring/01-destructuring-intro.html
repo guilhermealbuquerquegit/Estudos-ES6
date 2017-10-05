@@ -10,15 +10,61 @@
     <h1>Permite pegar elementos e criar variaveis a partir de objetos</h1>
 </body>
 <script>
+    
+    
     const data = {
         name: 'Guilherme',
         surname: 'Albuquerque',
         age: 18,
         social:{
-            github: '/guilhermealbuquerquegit'
+            github: '/guilhermealbuquerquegit',
+            facebook: '/GuilhermeAlbuquerque'
         }
     };
- const {name,social} = data.social;
- console.log(social);
+
+
+
+// const {name} = data;
+// console.log(name);
+// const {surname} = data;
+// console.log(surname);
+
+const {name, surname} = data;
+console.log(name);
+console.log(surname);
+
+
+const {github, facebook} = data.social;
+console.log(github);
+console.log(facebook);
+
+
+const {facebook: fb} = data.social;
+console.log(fb);;
+
+
+const {city = 'Munich'} = data;
+console.log(city);
+
+
+
+
+            // Erro de Identifier 'name' has already been declared
+// const {name = 'Cíntia'} = data;
+// console.log(name);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </script>
 </html>
