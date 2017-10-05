@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03 - Rest Params</title>
+</head>
+<body>
+    <h1>Útil para quando não tivemos certeza de quantos argumentos a nossa função irá receber</h1>
+</body>
+<script>
+
+//  function multiply(mult, arg1, arg2, arg3) {
+//     let arr = [];
+//     arr.push(mult * arg1);
+//     arr.push(mult * arg2);
+//     arr.push(mult * arg3); 
+// 	return arr;
+// };
+
+
+function multiply(mult, ...args) {
+    return args.map(arg => arg * mult);
+}
+
+console.log(multiply(5, 1,2,3,4,5,6,7,8,9));
+</script>
+</html>	

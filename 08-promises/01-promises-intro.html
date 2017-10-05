@@ -7,9 +7,18 @@
     <title>01 - Promises Intro</title>
 </head>
 <body>
-    <h1>É um objeto com uma ação que ainda não foi finaliza, mas pretende ser finalizada.</h1>
+    <h1>É um objeto com uma ação que ainda não foi finaliza, mas ser finalizada.</h1>
 </body>
 <script>
-    
+    var defer = new Promise((resolve, reject) => {
+    	if (true) {
+    		resolve('Hello');
+    	}else{
+    		reject();
+    	}
+    });
+
+
+    console.log(defer);
 </script>
 </html>
