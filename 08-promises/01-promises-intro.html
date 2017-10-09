@@ -10,15 +10,28 @@
     <h1>É um objeto com uma ação que ainda não foi finaliza, mas ser finalizada.</h1>
 </body>
 <script>
-    var defer = new Promise((resolve, reject) => {
-    	if (true) {
-    		resolve('Hello');
+
+ var defer = new Promise((resolve, reject) => {
+ setTimeout(() => {
+		 if(false) {
+    		resolve('Success!');
     	}else{
-    		reject();
+    		reject('Failed!');
     	}
-    });
+
+	}, 3000);
+});
 
 
-    console.log(defer);
+defer
+    .then((data) => {
+    	console.log(data)
+    	return 'foo';
+
+    })
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err))
+
+
 </script>
 </html>
