@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Testes de Estudos das Promises</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+const posts = fetch('https://willianjusten.com.br/search.json');
+
+	posts 
+		.then(data => data.json())
+
+
+		.then(data => data.map(post =>{
+			console.log(post)
+		}))
+
+		.catch((err) => {
+			console.log(err);
+		})
+	
+
+</script>
+</html>

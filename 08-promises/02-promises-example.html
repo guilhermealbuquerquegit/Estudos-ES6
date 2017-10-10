@@ -8,40 +8,29 @@
 </body>
 <script type="text/javascript">
 
-// 	let posts = fetch('https://willianjusten.com.br/search.json');
+let posts = fetch('https://willianjusten.com.br/search.json');
 
 // console.log(posts);
 // Status: RESOLVED, PENDING, REJECTED.
 
 
-//Função necessária para o status resolved
+// Função necessária para o status resolved
 		// setTimeout(() => {
 		// 	console.log(posts);
 		// },1000);
 
-// posts
-// 	.then(data => data.json()) //Transformando o dado em JSON
-// 	.then(data => console.log(posts))
+posts
+	.then(data => data.json()) //Transformando o dado em JSON
+	.then(data => {
+		throw new Error('Deu erro!')
+	})
 
+	// .then(data => data.map(post => {
+	// 	console.log(post.title);
+	// // }))	
 
-//     const data = [
-//         {
-//             status: 'solteiro'
-//         },
+	.catch(err => console.log(err));
 
-//         {
-//         	status: 'noivo'
-//         },
-//         {
-//         	status: 'namorando'
-//         }
-
-//     ];
-
-
-
-// const datafind = data.findIndex(data => data.status === 'solteiro');
-// console.log(datafind)
 
 
 </script>
