@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste estudos sobre Classes ES5</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+
+
+// function Person(name, age) {
+// 		this.name = name;
+// 		this.age = age;
+//  };
+
+// Person.prototype.hair = function(){
+//  console.log(`${name} possui o cabelo castanho`); 
+// };
+
+// Person.prototype.tamanho = function(){
+//  console.log(`${name} tem 1m e 80 cm`); 
+// };
+
+// const henrique = new Person('henrique','17');
+
+
+class Person {
+	constructor(name, age){
+		this.name = name;
+		this.age = age;
+	}
+
+	hair(){
+		console.log('castanho');
+	}
+
+	tamanho(){
+		console.log('1m e 80cm');
+	}
+
+	static info(){	
+		console.log('Hey Cíntia')
+	}
+
+	get school(){
+		console.log('Mário Alencar');
+	}
+}
+
+
+
+
+
+
+const henrique = new Person('henrique','17');
+
+
+
+	
+
+
+</script>
+</html>

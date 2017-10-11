@@ -7,20 +7,13 @@
 
 </body>
 <script type="text/javascript">
-const posts = fetch('https://willianjusten.com.br/search.json');
+fetch(url) {
+	return new Promise((resolve, reject) => {
+		setTimeout(() => resolve('some data'), 1000);
+	});
+}
 
-	posts 
-		.then(data => data.json())
-
-
-		.then(data => data.map(post =>{
-			console.log(post)
-		}))
-
-		.catch((err) => {
-			console.log(err);
-		})
-	
-
+	fetch('/some-url')
+		.then(data =>)
 </script>
 </html>
