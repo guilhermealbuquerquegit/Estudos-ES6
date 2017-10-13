@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>01 - Generator Intro</title>
+</head>
+<body>
+	<h1>Executar fluxo</h1>
+</body>
+<script type="text/javascript">
+	
+	function* genNames() {
+
+		console.log('Chamando o primeiro nome:');
+		yield 'Jaísa';
+
+		console.log('Chamando o segundo nome:');
+		yield 'Andrea';
+
+		console.log('Chamando o terceiro nome:')
+		yield 'Cíntia';
+	}
+
+	const names = genNames();
+
+
+	console.log(names.next());
+	// console.log(names.next());
+	// console.log(names.next());
+	// console.log(names.next());
+
+
+
+
+
+	</script>
+</html>

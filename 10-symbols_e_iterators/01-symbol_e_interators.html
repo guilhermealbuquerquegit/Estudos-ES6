@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>01 - Symbol Intro</title>
+</head>
+<body>
+	<h1>É um tipo primitivo (como array,string,number). Imutável e único.</h1>
+	<h2>Usado para quando não queremos correr o risco de conflitos de nomes de uma propriedade, ou quuando queremos trabalhar com tipos em memória</h2>
+</body>
+<script type="text/javascript">
+	
+
+	let foo = Symbol('name'); // possuem Ids difentes
+	let bar = Symbol('name'); 
+	console.log(foo === bar); // Comparação False Imutável e Único
+
+	let obj = {  //Mistura de propriedades com Symbols e propriedades de forma normal
+		[Symbol('name')]: 'Guilherme',
+		[Symbol('age')]: 18, 
+		city: 'Munich'
+	}
+
+
+	//console.log(Object.keys(obj)); // Ele não considera Symbol como keys.
+
+
+	const symbols = Object.getOwnPropertySymbols(obj);
+	const data = symbols.map(sym => obj[sym]);
+	console.log(data);
+	
+
+</script>
+</html>

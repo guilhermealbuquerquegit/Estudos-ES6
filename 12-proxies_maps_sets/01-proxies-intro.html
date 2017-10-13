@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>01 - Proxies Intro</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	
+	let obj = {
+		name: 'Guilherme',
+		age: '18'
+	};
+
+
+	let proxy = new Proxy(obj, {
+		
+		get(target, name) {
+			console.log('Alguém está pedindo o Nome');
+			// return 'Hey!';	
+			// return target;   target === obj
+			   return target[name];
+
+		},
+
+		set(target, name, value) {
+			console.log('Alguém está mudando o Nome');
+			 target[name] = value.toUpperCase();
+		} 
+
+	});
+
+
+</script>
+</html>

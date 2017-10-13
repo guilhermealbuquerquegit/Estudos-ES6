@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>02 - for...for</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var txt = 'Munich'; //Interable
+	var it = txt[Symbol.iterator](); //Interator
+
+	// console.log(it.next());
+	// console.log(it.next());
+	// console.log(it.next());
+	// console.log(it.next());
+	// console.log(it.next());	
+	// console.log(it.next());
+	// console.log(it.next());
+
+
+for (letter of txt) {
+	console.log(letter);
+	if (letter === 'n') break;
+};
+
+
+
+
+</script>
+</html>
