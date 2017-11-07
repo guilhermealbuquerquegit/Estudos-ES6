@@ -13,7 +13,7 @@
     
 
 
-*Principal Vantagem para o User => Não precisar baixar o App
+<-- Principal Vantagem para o User => Não precisar baixar o App -->
 
 -Service Workers => script que o navegador executa em segundo plano, independe da página.
 	# Sync em segundo plano
@@ -23,7 +23,18 @@
 	# Geolocalização
 	# Interceptar requisições
 		$ Networking First
-		 
+		
 
 
+
+
+
+
+
+
+https://developers.google.com/web/progressive-web-apps/
+https://github.com/ionic-team/ionic-pwa-demos/tree/master/ionic-conference-app#contributing
+https://www.google.com.br/search?q=arquitetura+service+workers&spell=1&sa=X&ved=0ahUKEwjk4cvx8onXAhXBhZAKHfVdDEwQvwUIJSgA&biw=1242&bih=614
+https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API/Using_Service_Workers
+https://developers.google.com/web/fundamentals/primers/service-workers/#compatibilidade_de_navegadores
 
