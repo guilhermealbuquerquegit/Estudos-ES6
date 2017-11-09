@@ -37,4 +37,8 @@ https://github.com/ionic-team/ionic-pwa-demos/tree/master/ionic-conference-app#c
 https://www.google.com.br/search?q=arquitetura+service+workers&spell=1&sa=X&ved=0ahUKEwjk4cvx8onXAhXBhZAKHfVdDEwQvwUIJSgA&biw=1242&bih=614
 https://developer.mozilla.org/pt-BR/docs/Web/API/Service_Worker_API/Using_Service_Workers
 https://developers.google.com/web/fundamentals/primers/service-workers/#compatibilidade_de_navegadores
+https://panda.ime.usp.br/pensepy/static/pensepy/Appendices/app_a.html
+https://developers.google.com/web/tools/chrome-devtools/javascript/
+https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Debugging_JavaScript
+
 
